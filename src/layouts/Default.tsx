@@ -1,24 +1,17 @@
 // components/Layout.tsx
 import { Outlet } from "react-router";
-import { Link } from "react-router";
+import Footer from "../components/Footer";
 
 export default function Default() {
   return (
-    <>
-      <header className="flex align-center">My App</header>
+    <div className="flex min-h-screen flex-col">
+      <header className="flex items-center">My App</header>
 
-      <main>
+      <main className="flex flex-1 items-center justify-center">
         <Outlet />
       </main>
 
-      <footer>
-                <nav>
-          <Link to="/">Home</Link> |{" "}
-          <Link to="/about">About</Link> |{" "}
-          <Link to="/login">Login</Link>
-        </nav>
-        © 2026
-        </footer>
-    </>
+      <Footer />
+    </div>
   );
 }

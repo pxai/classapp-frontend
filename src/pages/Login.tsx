@@ -24,7 +24,7 @@ export default function Login() {
   }
 
   return (
-    <>
+    <div className="flex flex-col">
     <div>Email</div>
     <div>
       <input
@@ -44,9 +44,9 @@ export default function Login() {
     />
     </div>
 
-      <button onClick={submit}>
+      <button className="btn-primary" onClick={submit}>
         Login
       </button>
-    </>
+    </div>
   );
 }

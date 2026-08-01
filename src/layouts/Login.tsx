@@ -1,6 +1,6 @@
 // components/Layout.tsx
 import { Outlet } from "react-router";
-import { Link } from "react-router";
+import Footer from "../components/Footer";
 
 export default function Admin() {
   return (
@@ -10,14 +10,7 @@ export default function Admin() {
         <Outlet />
       </main>
 
-      <footer className="border-t p-4 text-center">
-        <nav>
-          <Link to="/">Home</Link> |{" "}
-          <Link to="/about">About</Link> |{" "}
-          <Link to="/login">Login (Here)</Link>
-        </nav>
-        © 2026
-      </footer>
+      <Footer />
     </div>
     </>
   );

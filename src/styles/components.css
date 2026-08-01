@@ -1,0 +1,11 @@
+@utility btn {
+    @apply px-4 py-2 rounded-md font-medium transition;
+}
+
+@utility btn-primary {
+    @apply btn bg-primary text-white hover:opacity-90;
+}
+
+@utility card {
+    @apply rounded-lg border p-6 shadow-sm;
+}

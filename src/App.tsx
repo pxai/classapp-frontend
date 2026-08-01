@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Login from "./pages/Login";
 import ProtectedRoute from "./pages/protected/ProtectedRoute";
 import Dashboard from "./pages/protected/Dashboard";
+import EditTask from "./pages/protected/EditTask";
 
 export default function App() {
   return (
@@ -16,8 +17,9 @@ export default function App() {
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
           <Route path="dashboard" element={<ProtectedRoute />}>
-          <Route index element={<Dashboard />} />
-        </Route>
+            <Route index element={<Dashboard />} />
+            <Route path="task/edit/:id" element={<EditTask />} />
+          </Route>
       </Route>
 
       {/* Routes without the layout */}
