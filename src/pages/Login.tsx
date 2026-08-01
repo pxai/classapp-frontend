@@ -25,25 +25,30 @@ export default function Login() {
 
   return (
     <div className="flex flex-col">
-    <div>Email</div>
-    <div>
-      <input
-        value={email}
-        onChange={(e) =>
-          setEmail(e.target.value)
+    <div className="form-field">
+      <div>Email</div>
+      <div>
+        <input
+          className="input-text"
+          value={email}
+          onChange={(e) =>
+            setEmail(e.target.value)
+          }
+        />
+      </div>
+    </div>
+    <div className="form-field">
+      <div>Password</div>
+        <div><input
+          className="input-text"
+          type="password"
+          value={password}
+          onChange={(e) =>
+            setPassword(e.target.value)
         }
       />
+      </div>
     </div>
-    <div>Password</div>
-      <div><input
-      type="password"
-      value={password}
-      onChange={(e) =>
-        setPassword(e.target.value)
-      }
-    />
-    </div>
-
       <button className="btn-primary" onClick={submit}>
         Login
       </button>

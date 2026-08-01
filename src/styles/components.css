@@ -9,3 +9,11 @@
 @utility card {
     @apply rounded-lg border p-6 shadow-sm;
 }
+
+@utility form-field {
+    @apply m-2 p-2;
+}
+
+@utility input-text {
+    @apply rounded-md p-2 border focus:bg-blend-luminosity;
+}
